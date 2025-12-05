@@ -1,0 +1,17 @@
+db.students.insertMany([
+  { name: "Alice", age: 18 },
+  { name: "Bob", age: 20 },
+  { name: "Charlie", age: 22 }
+]);
+
+db.courses.insertMany([
+  { title: "Math", description: "Basic Mathematics" },
+  { title: "Physics", description: "Fundamentals of Physics" },
+  { title: "Programming", description: "Learn JavaScript" }
+]);
+
+db.enrollments.insertMany([
+  { studentId: ObjectId("STUDENT_ID_1"), courseId: ObjectId("COURSE_ID_1"), grade: "A" },
+  { studentId: ObjectId("STUDENT_ID_1"), courseId: ObjectId("COURSE_ID_2"), grade: "B" },
+  { studentId: ObjectId("STUDENT_ID_2"), courseId: ObjectId("COURSE_ID_3"), grade: "A" }
+]);
